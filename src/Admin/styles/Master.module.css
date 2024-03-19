@@ -1,0 +1,98 @@
+.UserPhoto {
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Cover {
+    height: 80px;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.DivWithImage {
+    display: flex;
+    flex-grow: 1;
+    background-size: cover;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    flex-basis: 40%;
+}
+.Icon {
+    height: 65px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.Title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+.Description {
+    font-size: 14px;
+    color: #717171;
+    font-weight: 400;
+}
+li.Description { margin-top: 10px; }
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.FacilityArea,
+.FacilityItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.FacilityItem {
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 555px;
+    padding: 10px 10px 10px 20px;
+}
+.FacilityIcon {
+    height: 24px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.FacilityName { 
+    margin-right: 15px; 
+    color: #333;
+    font-size: 14px;
+}
+.FooterFloating {
+    position: fixed;
+    bottom: 0px;right: 40px;left: 20%;
+    background-color: #fff;
+    height: 70px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    z-index: 5;
+    padding: 0px 40px;
+}
+
+@media (max-width: 480px) {
+    .FacilityArea {
+        gap: 10px;
+    }
+}

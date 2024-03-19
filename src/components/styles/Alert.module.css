@@ -1,0 +1,13 @@
+.Area {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+.Color_2 { background-color: #2ecc71; }
+.Color_4 { background-color: #fcd840;color: #333; }
+.Color_5 { background-color: #e74c3c; }
+
+.Error { background-color: #e74c3c; }

@@ -1,0 +1,21 @@
+.Area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.Radio {
+    aspect-ratio: 1/1;
+    border-radius: 999px;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RadioInner {
+    background-color: red;
+    border-radius: 99px;
+    aspect-ratio: 1/1;
+}

@@ -1,0 +1,17 @@
+.Area {
+    aspect-ratio: 1;
+    border: 1px solid #717171;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Active {
+    background-color: #222;
+    border: 1px solid #222;
+    color: #fff;
+}
+.Image {
+    width: 100%;
+}

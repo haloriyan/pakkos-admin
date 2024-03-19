@@ -1,0 +1,25 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.Label {
+    display: flex;
+    flex-grow: 1;
+    font-size: 14px;
+    color: #222;
+    font-weight: 400;
+}
+.RightLabel {
+    color: #717171;
+    font-weight: 400;
+    font-size: 14px;
+}

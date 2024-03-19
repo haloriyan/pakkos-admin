@@ -1,0 +1,158 @@
+.Header {
+    position: fixed;
+    top: 0px;right: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    border-bottom: 1px solid #eee;
+    padding: 0px 20px;
+    gap: 10px;
+    z-index: 10;
+    background-color: #fff;
+}
+.Logo {
+    height: 40px;
+    width: min-content;
+}
+.LogoArea {
+    width: 25%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+}
+.Right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+}
+.Item {
+    padding: 0px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+    height: 35px;
+}
+.ProfileIcon {
+    height: 50px;
+    aspect-ratio: 1;
+    background-color: #ddd;
+    border-radius: 999px;
+    cursor: pointer;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfileMenu {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    position: fixed;
+    top: 70px;right: 20px;
+    width: 255px;
+    z-index: 10;
+    box-shadow: 1px 1px 5px 1px #ddd;
+}
+.ProfileMenuItem {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+    font-size: 14px;
+    padding: 0px 15px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.ProfileMenuItemActive {
+    background-color: #eee;
+}
+.Separator {
+    width: 60%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 20%;
+}
+.MenuMobile { display: none; }
+
+@media (max-width: 480px) {
+    .Header {
+        display: none;
+    }
+    .HeaderMobile {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 20px;
+        height: 70px;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        position: fixed;
+        top: 0px;left: 0px;right: 0px;
+        z-index: 5;
+        background-color: #fff;
+    }
+    .LogoArea {
+        width: auto;
+        display: flex;
+        flex-grow: 1;
+    }
+    .Logo {
+        width: min-content;
+        height: 30px;
+    }
+    .Toggler {
+        border: 1px solid #ddd;
+        height: 40px;
+        aspect-ratio: 1;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+    .MenuMobile {
+        display: flex;
+        position: fixed;
+        top: 80px;left: 0px;bottom: 0px;
+        width: 100%;
+        left: 100%;
+        background-color: #fff;
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    .MenuMobileActive { left: 0%; }
+    .MenuMobileItem {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #212121;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .ProfileMenu {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        box-shadow: none;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,88 @@
+.Button {
+    padding: 0px 25px;
+    height: 50px;
+    /* border-radius: 8px; */
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+.ButtonPrimary {
+    background-color: #0870CD;
+    border: 1px solid #0870CD;
+    color: #fff;
+}
+.ButtonPrimary.red {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+    color: #fff;
+}
+.ButtonPrimary.green {
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+    color: #fff;
+}
+.ButtonPrimary.green:hover { background-color: #27ae60; }
+.ButtonPrimary.white {
+    background-color: #fff;
+    color: #0870CD;
+}
+
+.ButtonSecondary {
+    background-color: #fff;
+    color: #0870CD;
+    border: 1px solid #0870CD;
+}
+.ButtonSecondary.red {
+    background-color: #fff;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+.ButtonSecondary.muted {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+}
+.ButtonSecondary.black {
+    border: 1px solid #222;
+    color: #222;
+}
+.ButtonSecondary:hover {
+    background-color: #0870CD;
+    color: #fff;
+}
+.ButtonSecondary.red:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.ButtonSecondary.muted:hover {
+    background-color: #fff;
+    color: #0870CD;
+    font-weight: 700;
+}
+.ButtonSecondary.black:hover {
+    background-color: #fff;
+    color: #222;
+}
+.ButtonTertiary {
+    background-color: #fff;
+    color: #0870CD;
+    font-weight: 700;
+}
+.ButtonTertiary:hover {
+    background-color: #0870CD30;
+}
+.ButtonTertiary.red {
+    background-color: #fff;
+    color: #e74c3c;
+    font-weight: 700;
+}
+.ButtonTertiary.red:hover {
+    background-color: #e74c3c30;
+}

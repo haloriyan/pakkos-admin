@@ -1,0 +1,72 @@
+.Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 20px;
+}
+.Card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 31%;
+    gap: 20px;
+}
+.Cover {
+    height: 350px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.Title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #444;
+}
+.Organizer {
+    flex-direction: row;
+    gap: 5px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.Info {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.ControlButton {
+    position: absolute;
+    top: 110px;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 99px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.LeftButton {
+    left: -25px;
+}
+.RightButton {
+    left: 100%;
+    margin-left: -25px;
+}
+
+@media (max-width: 480px) {
+    .Card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

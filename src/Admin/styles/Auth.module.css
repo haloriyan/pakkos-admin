@@ -1,0 +1,30 @@
+.Container {
+    position: fixed;
+    top: 0px;left: 0px;right: 0px;bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+}
+.LeftArea {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #0870CD;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 40px;
+}
+
+@media (max-width: 480px) {
+    .LeftArea {
+        display: none;
+    }
+}

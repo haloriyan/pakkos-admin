@@ -1,0 +1,54 @@
+.Menu {
+    position: fixed;
+    top: 65px;left: 0%;bottom: 0px;
+    /* border-right: 1px solid #ddd; */
+    width: 20%;
+    padding: 20px;
+}
+.MenuArea {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    overflow-x: auto;
+}
+.MenuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    height: 30px;
+    padding: 6px 10px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.MenuActive {
+    background-color: #f0f0f0;
+    font-weight: 700;
+    color: #CA0C64;
+}
+.MenuMobile {
+    display: none;
+}
+.OrganizerLogo {
+    height: 30px;
+    aspect-ratio: 1;
+    background-color: #ddd;
+    border-radius: 99px;
+}
+
+@media (max-width: 480px) {
+    .MenuMobile {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;left: 0px;right: 0px;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        z-index: 3;
+    }
+}
